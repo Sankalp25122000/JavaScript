@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping App</title>
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
+    <br />
+    <label>Select Product</label><br />
+    <select name="Biscuits" id="item">
+      <option value="Parle Biscuit">Parle Biscuit</option>
+      <option value="Jim-Jam">Jim-Jam</option>
+      <option value="Dark-Fantasy">Dark-Fantasy</option>
+      <option value="Bourbon">Bourbon</option></select
+    ><br /><br />
+    <label>Unit Price:</label><br />
+    <input type="number" readonly /><br /><br />
+    <label>Select Quantity</label><br />
+    <input
+      type="number"
+      id="quantity"
+      name="quantity"
+      min="0"
+      max="10"
+    /><br /><br />
+    <button>Add to Cart</button>
+
+    <h2>Shopping List</h2>
+
+    <table>
+      <tr>
+        <td>Product Name</td>
+        <td>Quantity</td>
+        <td>Unit Price</td>
+        <td class="totalPrice">Sub Total</td>
+        <td>Remove</td>
+      </tr>
+    </table>
+
+    <span id="value"></span>
+
+    <script src="shopCart2.js"></script>
+  </body>
+</html>

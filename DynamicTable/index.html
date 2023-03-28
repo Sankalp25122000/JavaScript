@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Request</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <h1>Post Request</h1>
+    <form id="newForm">
+        <label for="RollNo">Roll No:</label><br>
+        <input type="number" id="roll"><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name"><br>
+        <label for="Age">Age:</label><br>
+        <input type="number" id="age"><br>
+        <label for="Email-id">Email-id:</label><br>
+        <input type="text" id="mail"><br>
+        <input type="submit" value="submit">
+
+        <table id="t1" class="table">
+            <tr>
+                <td>Roll No</td>
+                <td>Name</td>
+                <td>Age</th>
+                <th>Email-id</th>
+            
+            </tr>
+        </table>
+    </form>
+    <script src="request.js"></script>
+</body>
+</html>

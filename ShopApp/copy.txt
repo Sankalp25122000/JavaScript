@@ -1,0 +1,17 @@
+
+ let productCart = [];
+  function cartItem(itemName) {
+    productCart.push(itemName);
+    return selectedItem.name;
+  }
+
+  function prodQuantity(itemQuant) {
+    productCart.push(itemQuant);
+    return quantity.value;
+  }
+  console.log(productCart);
+
+  const newRow = prodTableBody.insertRow();
+  newRow.innerHTML = `
+      <td>${cartItem(selectedItem.name)}</td>
+      <td>${prodQuantity(quantity.value)}</td>
